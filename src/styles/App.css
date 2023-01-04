@@ -1,0 +1,50 @@
+.contenido {
+  height: 40em;
+  overflow-y: auto;
+}
+
+.table-striped tbody tr:nth-of-type(2n+1){
+  background-color: rgba(49, 157, 243, 0.3);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(49, 157, 243, 0.5);
+  color: black;
+}
+
+.table th, .table td{
+  padding: 0.5rem;
+  --bs-table-accent-bg: transparent;
+}
+
+table th, table td {
+  background-color: rgba(49, 157, 243, 0.3);
+}
+
+td, .titulo {
+  background-color: rgba(41, 41, 41, 0.5) !important;
+  color: white !important;
+}
+
+.enfermo {
+  background-color: rgb(216, 144, 144) !important;
+}
+
+/*EFECTOS DE ANIMACION*/
+
+table tr.add-row-animation {
+  transition-duration: 1s;
+  animation: addRow 0.5s 1 linear;
+  transform-origin: top;
+}
+
+@keyframes addRow {
+  0% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
